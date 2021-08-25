@@ -140,7 +140,7 @@ function addRole() {
             name: 'dpt_id',
         },
     ]).then((value) => {
-        queries.insertRolesTable(value.title, value.salary, value.department_id);
+        queries.insertRTable(value.title, value.salary, value.department_id);
         start();
     })
 }
@@ -156,7 +156,7 @@ function employees() {
     ]).then((value) => {
         switch(value.choice){
             case listprompts.employees[0]:
-                queries.selectEsTable();
+                queries.selectETable();
                 start();
                 break;
             case listprompts.employees[1]:
@@ -192,7 +192,7 @@ function addEmployee() {
             name: 'manager_id',
         },
     ]).then((value) => {
-        queries.insertEmployeeTable(value.title, value.salary, value.department_id, value.manager_id);
+        queries.insertETable(value.title, value.salary, value.department_id, value.manager_id);
         start();
     })
 }
@@ -210,7 +210,7 @@ function updateEmployee() {
             name: 'role',
         },
     ]).then((value) => {
-        queries.updateEmployeeTable(value.employee_id, value.role);
+        queries.updateETable(value.employee_id, value.role);
         start();
     })
 }
