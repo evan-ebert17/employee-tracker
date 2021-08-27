@@ -1,41 +1,41 @@
 INSERT INTO departments (department_name)
-VALUES ("Accounting"),
-       ("Sales"),
-       ("Information Technology"),
-       ("Human Resources");
+VALUES ("Germ Eating"),
+       ("Pencil Pushing"),
+       ("Jello-Makers"),
+       ("People who Made Pikmin");
 
 INSERT INTO roles (title, salary, department_id)
-VALUES  ("Accounting Manager", 130000.00, 1),
-        ("Accountant", 97500.00, 1),
-        ("Assistant Controller", 73125.80, 1),
-        -- ? sales
-        ("Sales Manager", 123398.43, 2),
-        ("Sales Specialist ", 92548.82, 2),
-        -- ? it
-        ("Systems Engineering Manager", 131040, 3),
-        ("Hardware Technician", 117936.50, 3),
-        ("Help Desk Analyst ", 85975.34, 3),
-        ("Network Administrator", 117936.50, 3),
-        -- ? hr
-        ("Human Resources Managers ", 103170.41, 4),
-        ("Human Resources Specialists ", 92853.37, 4);
+        -- Germ
+VALUES  ("Germ Manager", 150000.00, 1),
+        ("Germ Maker", 91800.00, 1),
+        ("Germ Conniser", 80000.80, 1),
+        --  Pencil
+        ("Pencil Manager", 125999.00, 2),
+        ("Master Pusher ", 92000.00, 2),
+        ("Pencil Itself", 30000.50, 2),
+        --  Jello
+        ("Jello Manager", 170000.00, 3),
+        ("Jello Maker", 120000.50, 3),
+        ("Jello Analyst ", 75000.00, 3),
+        --  Pikmin
+        ("Biggest Pikmin Fan ", 190000.50, 4),
+        ("Moderate Pikmin Fan ", 90000.00, 4),
+        ("Pikmin Unjoyer", 100, 4);
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
-VALUES ("Robert", "Miller", 1, null),
-       ("Ruben", "Stillwell", 2, 1),
-       ("Bobby", "Hernandez", 2, 1),
-       ("William", "Jones", 3, 1),
-        -- ? sales
-       ("Mary", "Schroeder", 4, null),
-       ("Carl", "Booth", 5, 5),
-       ("Hillary", "Spillers", 5, 5),
-        -- ? it
-       ("Jesus", "Ellis", 6, null),
-       ("Jeff", "Corder", 7, 8),
-       ("James", "Bahe", 8, 8),
-       ("Carol", "Macdonald", 8, 8),
-       ("Harry", "Warren", 9, 8),
-        -- ? hr
-       ("Alejandro", "Bryner", 10, null),
-       ("Martin", "Tucker", 11, 13),
-       ("Francisca", "Updike", 11, 13);
+        -- germ
+VALUES ("Gerry", "Murm", 1, null),
+       ("Handsa", "Nitzer", 2, 1),
+       ("Isoprob", "Alkay", 2, 1),
+        --  Pencil
+       ("Shay", "Ving", 4, null),
+       ("Eirai", "Sjyur", 5, 5),
+       ("Gray", "Phite", 5, 5),
+        --  Jello
+       ("Jael", "Lough", 6, null),
+       ("Gella", "Tinneous", 7, 8),
+       ("Sherry", "Fleighvourg", 8, 8),
+        --  Pikmin
+       ("Red", "Pitchman", 10, null),
+       ("Blue", "Pikemine", 11, 13),
+       ("Yellow", "Pickmine", 11, 13);
