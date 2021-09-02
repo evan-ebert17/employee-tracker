@@ -127,7 +127,7 @@ function addRole() {
         {
             type: 'input',
             message: 'Enter new role name',
-            name: 'name',
+            name: 'title',
         },
         {
             type: 'input',
@@ -137,7 +137,7 @@ function addRole() {
         {
             type: 'input',
             message: 'Enter new role dpt id',
-            name: 'dpt_id',
+            name: 'department_id',
         },
     ]).then((value) => {
         queries.insertRTable(value.title, value.salary, value.department_id);
@@ -162,7 +162,7 @@ function employees() {
             case listprompts.employees[1]:
                 addEmployee();
                 break;
-            case listprompts.employees[1]:
+            case listprompts.employees[2]:
                 updateEmployee();
                 break;
         }

@@ -17,8 +17,8 @@ function updateETable(role_id, id) {
         }
     });
 }
-function insertETable(string, integer, integer) {
-    db.query(`INSERT INTO employees (title, salary, department_id) VALUES (?, ?, ?);`, [string, integer, integer], (err, result) => {
+function insertETable(string, decimal, integer) {
+    db.query(`INSERT INTO employees (title, salary, department_id) VALUES (?, ?, ?);`, [string, decimal, integer], (err, result) => {
         if (err) {
             console.log(err);
         }
@@ -37,8 +37,8 @@ function selectETable() {
     });
 }
 
-function insertRTable(string, integer, integer) {
-    db.query(`INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?);`, [string, integer, integer], (err, result) => {
+function insertRTable(string, decimal, integer) {
+    db.query(`INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?);`, [string, decimal, integer], (err, result) => {
         if (err) {
             console.log(err);
         } else {
