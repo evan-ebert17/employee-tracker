@@ -9,7 +9,7 @@ const db = mysql.createConnection(
 );
 
 function updateETable(role_id, id) {
-    db.query(`UPDATE employee SET role_id=? WHERE id=?`, [role_id, id], (err, result) => {
+    db.query(`UPDATE employees SET role_id=? WHERE id=?`, [role_id, id], (err, result) => {
         if (err) {
             console.log(err);
         }else {
