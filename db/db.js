@@ -14,16 +14,14 @@ function updateETable(role_id, id) {
             console.log(err);
         }else {
             console.table(result);
-
         }
     });
 }
-function insertETable(string, decimal, integer) {
-    db.query(`INSERT INTO employees (title, salary, department_id) VALUES (?, ?, ?);`, [string, decimal, integer], (err, result) => {
+function insertETable(string, integer, integer) {
+    db.query(`INSERT INTO employees (title, salary, department_id) VALUES (?, ?, ?);`, [string, integer, integer], (err, result) => {
         if (err) {
             console.log(err);
         }
-
         console.table('Added new Employee!');
     });
 }
@@ -39,13 +37,12 @@ function selectETable() {
     });
 }
 
-function insertRTable(string, decimal, integer) {
-    db.query(`INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?);`, [string, decimal, integer], (err, result) => {
+function insertRTable(string, integer, integer) {
+    db.query(`INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?);`, [string, integer, integer], (err, result) => {
         if (err) {
             console.log(err);
         } else {
             console.table('Added new role to the table.');
-
         }
     });
 }
@@ -56,7 +53,6 @@ function selectRTable() {
     if (err) {
         console.log(err);
     } else {
-
         console.table(result);
     }
     });
@@ -77,7 +73,6 @@ function selectDTable() {
         if (err) {
             console.log(err);
         } else {
-
             console.table(result);
         }
         });
