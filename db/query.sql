@@ -15,8 +15,7 @@ SELECT roles.id, roles.title, roles.salary, departments.department_name
 FROM roles
 INNER JOIN departments ON roles.department_id = departments.id;
 
-SELECT employees.id as employee_id, employees.first_name, employees.last_name, roles.title, roles.salary, departments.department_name, CONCAT(managers.first_name, " ", managers.last_name) AS manager_name
+SELECT employees.id as employee_id, employees.first_name, employees.last_name, roles.title, roles.salary, departments.department_name
 FROM roles
 INNER JOIN employees ON roles.id = employees.role_id
 LEFT JOIN departments ON roles.department_id = departments.id
-LEFT JOIN employees managers ON employees.manager_id = managers.id;

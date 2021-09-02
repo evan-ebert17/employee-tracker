@@ -22,20 +22,20 @@ VALUES  ("Germ Manager", 150000.00, 1),
         ("Moderate Pikmin Fan ", 90000.00, 4),
         ("Pikmin Unjoyer", 100, 4);
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id)
         -- germ
-VALUES ("Gerry", "Murm", 1, null),
-       ("Handsa", "Nitzer", 2, 1),
-       ("Isoprob", "Alkay", 2, 1),
+VALUES ("Gerry", "Murm", 1),
+       ("Handsa", "Nitzer", 2),
+       ("Isoprob", "Alkay", 2),
         --  Pencil
-       ("Shay", "Ving", 4, null),
-       ("Eirai", "Sjyur", 5, 5),
-       ("Gray", "Phite", 5, 5),
+       ("Shay", "Ving", 4),
+       ("Eirai", "Sjyur", 5),
+       ("Gray", "Phite", 5),
         --  Jello
-       ("Jael", "Lough", 6, null),
-       ("Gella", "Tinneous", 7, 8),
-       ("Sherry", "Fleighvourg", 8, 8),
+       ("Jael", "Lough", 6),
+       ("Gella", "Tinneous", 7),
+       ("Sherry", "Fleighvourg", 8),
         --  Pikmin
-       ("Red", "Pitchman", 10, null),
-       ("Blue", "Pikemine", 11, 13),
-       ("Yellow", "Pickmine", 11, 13);
+       ("Red", "Pitchman", 10),
+       ("Blue", "Pikemine", 11),
+       ("Yellow", "Pickmine", 11);

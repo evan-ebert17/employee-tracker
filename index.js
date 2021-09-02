@@ -173,7 +173,7 @@ function addEmployee() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Enter new employee title',
+            message: 'Enter the name of the new employee',
             name: 'title',
         },
         {
@@ -186,13 +186,8 @@ function addEmployee() {
             message: 'Enter new employee dpt id',
             name: 'department_id',
         },
-        {
-            type: 'input',
-            message: 'Enter new manager id',
-            name: 'manager_id',
-        },
     ]).then((value) => {
-        queries.insertETable(value.title, value.salary, value.department_id, value.manager_id);
+        queries.insertETable(value.title, value.salary, value.department_id);
         start();
     })
 }
